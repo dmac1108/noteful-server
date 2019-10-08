@@ -62,6 +62,7 @@ notesRouter
         res.note = note
         next()  
     })
+    .catch(next)
 })
 .get((req, res, next) =>{
     res.json(serializeNote(res.note))
