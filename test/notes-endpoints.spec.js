@@ -1,8 +1,10 @@
+require('dotenv').config()
 const {expect} = require('chai');
 const knex = require('knex');
 const app = require('../src/app')
 const {makeNotesArray, makeFoldersArray} = require('./notes.fixtures')
 const maliciousNote = require('./notes-malicious-fixtures')
+
 
 let db
 
